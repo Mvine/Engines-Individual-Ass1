@@ -153,7 +153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 7008785284576285171, guid: bb06c5ba2d15c2647b82760f50c866d5, type: 3}
-  poolAmount: 10
+  poolAmount: 3
 --- !u!4 &117272521
 Transform:
   m_ObjectHideFlags: 0

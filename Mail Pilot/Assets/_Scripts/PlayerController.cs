@@ -21,7 +21,7 @@ public class PlayerController : MonoBehaviour
 
     private bool isFiring = false;
 
-    //TODO: create a reference to the BulletPoolManager here
+    //created a reference to the BulletPoolManager here
 
     public BulletPoolManager m_bulletPoolManager;
 
@@ -119,13 +119,10 @@ public class PlayerController : MonoBehaviour
             {
                 _bulletSound.Play();
 
-                //TODO: this code needs to change to user the BulletPoolManager's
-                //TODO: GetBullet function which will return a reference to a 
-                //TODO: bullet object. 
-                //TODO: Ensure you position the new bullet at the bulletSpawn position
-               GameObject bullet = m_bulletPoolManager.GetBullet();
-               bullet.transform.position = bulletSpawn.position;
-               //Instantiate(bullet, bulletSpawn.position, Quaternion.identity);
+                // this code uses the BulletPoolManager's GetBullet function which
+                // will return a reference to a bullet object. 
+                GameObject bullet = m_bulletPoolManager.GetBullet();
+                bullet.transform.position = bulletSpawn.position;
             }
 
         }

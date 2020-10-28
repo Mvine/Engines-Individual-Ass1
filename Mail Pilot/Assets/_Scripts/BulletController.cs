@@ -8,7 +8,7 @@ public class BulletController : MonoBehaviour
     public float bulletSpeed = 0.1f;
     public Boundary boundary;
 
-    //TODO: create a reference to the BulletPoolManager
+    // created a reference to the BulletPoolManager
     public BulletPoolManager bulletPoolManager;
 
     void Start()
@@ -33,8 +33,8 @@ public class BulletController : MonoBehaviour
     {
         if (transform.position.y >= boundary.Top)
         {
-            //TODO: This code needs to change to use the BulletPoolManager's
-            //TODO: ResetBullet function which will return the bullet to the pool
+            // This code  uses the BulletPoolManager's
+            // ResetBullet function which will return the bullet to the pool
             bulletPoolManager.ResetBullet(this.gameObject);
         }
     }
